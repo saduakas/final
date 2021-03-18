@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Football Score</title>
+
+    <!-- Bootstrap  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/53804abd35.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div id="header" class="container-fluid sticky-top text-light">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light text-white">
+            <a class="navbar-brand">Football Score</a>
+            <a class="navbar-brand"><img src="img/aitu-logo.png" class="rounded-0" width="150" /></a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about"><i class="fas fa-book"></i> About us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="image">
+        <div id="Team1" class="row justify-content-md-center">
+            <div class="col-lg-6">
+                <label for="members">Team 1 Players:</label> <br />
+                <textarea id="text1" name="text1" rows="3" cols="40"></textarea>
+                <p>Please, enter your team players with a comma ','</p>
+            </div>
+            <div class="col-lg-6">
+                <label for="score1">Goals score by Team 1 :</label> <br />
+                <input type="number" min='0' max='7' id="score1" name="score1" rows="1" cols="20" />
+                <!--общее количество голов не должно быть больше 7-->
+            </div>
+        </div>
+        <hr />
+
+        <div class='container border-rounded' id="winner">
+            <h3>The Winner is</h3>
+            <br />
+            <div id="winner-text"></div>
+            <h3>The score list :</h3>
+            <div id="winner-scores-comb"></div>
+        </div>
+
+        <hr />
+        <div id="Team2" class="row justify-content-md-center">
+            <div class="col-lg-6">
+                <label for="members2">Team 2 Players:</label> <br />
+                <textarea id="text2" name="text1" rows="3" cols="40"></textarea>
+                <p>Please, enter your team players with a comma ','</p>
+            </div>
+            <div class="col-lg-6">
+                <label for="score2">Goals score by Team 2 :</label> <br />
+                <input type="number"  min='0' max='7' id="score2" name="score2" rows="1" cols="20" /><br /><br />
+                <button id="submit" type="submit" form="form1" value="Submit">Get Winner</button>
+            </div>
+        </div>
+    </div>
+    <div id="contacts">
+        <nav class="navbar fixed-bottom bg-dark">
+            <a
+                class="navbar-brandd"
+                href="https://www.google.com/maps/place/Astana+IT+University/@51.0908492,71.4183229,15z/data=!4m5!3m4!1s0x0:0x4dff4a1973f7567e!8m2!3d51.0908492!4d71.4183229"
+            >
+                <img
+                    src="img/2gis.png"
+                    width="30"
+                    height="30"
+                    class="d-inline-block align-top"
+                    alt="mylink"
+                />
+                Address: Turkistan street, Nur-Sultan
+            </a>
+            <a class="navbar-brandd" href="https://www.instagram.com/astana_it_university/?hl=ru">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png"
+                    width="30"
+                    height="30"
+                    class="d-inline-block align-top"
+                    alt="mylink2"
+                />
+                Instagram
+            </a>
+            <a class="navbar-brandd" href="https://astanait.edu.kz/">
+                <img src="img/aitu-logo2.png" width="30" height="30" class="d-inline-block align-top" alt="" />
+                Astana IT University
+            </a>
+        </nav>
+    </div>
+    <!-- JS  -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>

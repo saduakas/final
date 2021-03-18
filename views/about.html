@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Football Score</title>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/53804abd35.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header" class="container-fluid sticky-top text-light">
+        <nav class="navbar  sticky-top navbar-expand-lg navbar-light text-white">
+            <a class="navbar-brand" href="/index">Football Score</a>
+            <a class="navbar-brand" href="/index"><img src="img/aitu-logo.png" class="rounded-0" width="150"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about"><i class="fas fa-book"></i> About us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="projectteam" class="container">
+        <div class="row">
+            <div class="col">
+                <!--Carousel -->
+                <section id="carousel">
+                    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselCaptions" data-slide-to="1" class="indicator active"></li>
+                            <li data-target="#carouselCaptions" data-slide-to="2" class="indicator"></li>
+                            <li data-target="#carouselCaptions" data-slide-to="3" class="indicator"></li>
+                            <li data-target="#carouselCaptions" data-slide-to="4" class="indicator"></li>
+                            <li data-target="#carouselCaptions" data-slide-to="5" class="indicator"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-step="1">
+                                <img src="img/Carousel1.jpg" alt="Wallpaper" class="carousel-img">
+                            </div>
+                            <div class="carousel-item" data-step="2">
+                                <img src="img/Carousel2.jpg" alt="Wallpaper" class="carousel-img">
+                            </div>
+                            <div class="carousel-item" data-step="3">
+                                <img src="img/Carousel3.jpg" alt="Wallpaper" class="carousel-img">
+                            </div>
+                            <div class="carousel-item" data-step="4">
+                                <img src="img/Carousel4.jpg" alt="Wallpaper" class="carousel-img">
+                            </div>
+                            <div class="carousel-item" data-step="5">
+                                <img src="img/Carousel5.jpg" alt="Wallpaper" class="carousel-img">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div class="col">
+                <p>Our team members:</p>
+                <ul>
+                    <li>Saduakas Aizhan</li>
+                    <li>Sagidullayeva Tansu</li>
+                    <li>Beibit Danira</li>
+                    <li>Raushanbekova Maira</li>
+                    <li>Kozhakhmetov Assylbek</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contacts">
+            <nav class="navbar  fixed-bottom bg-dark">
+                <a class="navbar-brandd" href="https://www.google.com/maps/place/Astana+IT+University/@51.0908492,71.4183229,15z/data=!4m5!3m4!1s0x0:0x4dff4a1973f7567e!8m2!3d51.0908492!4d71.4183229">
+                    <img src="img/2gis.png" width="30" height="30" class="d-inline-block align-top" alt="mylink">
+                    Address: Turkistan street, Nur-Sultan
+                </a>
+                <a class="navbar-brandd" href="https://www.instagram.com/astana_it_university/?hl=ru">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="30" height="30" class="d-inline-block align-top" alt="mylink2">
+                    Instagram
+                </a>
+                <a class="navbar-brandd" href="https://astanait.edu.kz/">
+                    <img src="img/aitu-logo2.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                    Astana IT University
+                </a>
+            </nav>
+        </div>
+    </div>
+</body>

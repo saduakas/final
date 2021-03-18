@@ -1,0 +1,11 @@
+{
+  "name": "final",
+  "version": "1.0.0",
+  "description": "final project football score",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Team 3 ITM-2003",
+  "license": "ISC"
+}
